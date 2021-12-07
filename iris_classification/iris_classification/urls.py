@@ -1,4 +1,4 @@
-"""iris_classification URL Configuration
+"""django_project URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.2/topics/http/urls/
@@ -15,7 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls import url
+from django.conf.urls import include
+from iris_app import views
+
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    url(r'^$', views.index, name='index'),
+    url(r'^admin/', admin.site.urls),
+    url(r'^prediction/', views.form_name_view, name='prediction')
 ]
