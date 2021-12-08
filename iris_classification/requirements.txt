@@ -1,0 +1,11 @@
+Django
+djangorestframework
+pydantic
+numpy
+pandas
+scikit-learn==1.0.1
+unicode
+# Code Quality Requirements
+flake8
+black
+pickle-mixin
