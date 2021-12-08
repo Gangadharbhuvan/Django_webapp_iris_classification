@@ -17,7 +17,7 @@ class irisAPIView(APIView):
         request_sl = request.data["sl"]
         request_sw = request.data["sw"]
         request_pl = request.data["pl"]
-        request_pw: object = request.data["pw"]
+        request_pw = request.data["pw"]
         prediction = IrisAppConfig.model.predict()
 
         if prediction == 0:
