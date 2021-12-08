@@ -1,3 +1,10 @@
 # Django_webapp_iris_classification
 
-## creating a Webapp using Django with Python to perform classification on iris followers dataset.
+## Creating a Webapp using Django with Python to perform classification on iris followers dataset.
+
+### Home page
+![Homepage](https://github.com/Gangadharbhuvan/Django_webapp_iris_classification/blob/main/iris_classification/templates/iris_app/images/homepage.png)
+
+
+### Prediction page
+![Predictionpage](https://github.com/Gangadharbhuvan/Django_webapp_iris_classification/blob/main/iris_classification/templates/iris_app/images/predictionpage.png)
