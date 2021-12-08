@@ -8,3 +8,4 @@ unicode
 # Code Quality Requirements
 flake8
 black
+pickle-mixin
