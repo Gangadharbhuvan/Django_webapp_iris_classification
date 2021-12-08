@@ -18,7 +18,7 @@ class irisAPIView(APIView):
         request_sw = request.data["sw"]
         request_pl = request.data["pl"]
         request_pw: object = request.data["pw"]
-        prediction = DjangoappConfig.model.predict()
+        prediction = IrisAppConfig.model.predict()
 
         if prediction == 0:
             flower = "setosa"
