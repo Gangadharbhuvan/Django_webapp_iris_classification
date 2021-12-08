@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Django
 djangorestframework
 pydantic
@@ -8,4 +9,16 @@ unicode
 # Code Quality Requirements
 flake8
 black
+=======
+Django
+djangorestframework
+pydantic
+numpy
+pandas
+scikit-learn==1.0.1
+unicode
+# Code Quality Requirements
+flake8
+black
+>>>>>>> 6b746f70c732001cd815a1b92e3693fbf2906f9a
 pickle-mixin
