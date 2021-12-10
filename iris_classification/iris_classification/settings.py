@@ -58,7 +58,7 @@ ROOT_URLCONF = 'iris_classification.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [TEMPLATE_DIR, ],
+        'DIRS': [TEMPLATE_DIR, MODELS, ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

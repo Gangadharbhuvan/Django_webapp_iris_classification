@@ -1,11 +1,10 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from django.shortcuts import render
-from django.http import HttpResponse
 from django.http import JsonResponse
 from rest_framework.views import APIView
 from . import forms
 from iris_app import views
+import numpy as np
 from .apps  import IrisAppConfig
 # Create your views here.
 
@@ -14,17 +13,19 @@ class irisAPIView(APIView):
         pass
 
     def post(self, request, format=None):
-        request_sl = request.data["sl"]
-        request_sw = request.data["sw"]
-        request_pl = request.data["pl"]
-        request_pw = request.data["pw"]
-        prediction = IrisAppConfig.model.predict()
+        if request.method == "POST":
+            request_sl = self.request.POST["sl"]
+            request_sw = self.request.POST["sw"]
+            request_pl = self.request.POST["pl"]
+            request_pw = self.request.POST["pw"]
 
-        if prediction == 0:
-            flower = "setosa"
-        elif prediction == 1:
-            flower = "versicolor"
-        else : flower = "virginica"
+            data = [request_sl, request_sw, request_pl, request_pw]
+            data = np.array(data).reshape(-1, 4)
+            result = DjangoappConfig.model.predict(data)
 
-        out = dict(name=request_sl, flower=flower)
-        return JsonResponse(out)
+            predict_flower = ['Setosa', 'versicolor', 'virginica']
+            result = predict_flower[result[0]]
+
+            context = {"result": result}
+            return JsonResponse(context)
+        return render(request, "index.html")

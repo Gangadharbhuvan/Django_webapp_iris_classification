@@ -1,5 +1,9 @@
 from django.apps import AppConfig
-
+from django.conf import settings
+from pathlib import Path
+import joblib
+import numpy as np
+import sklearn
 
 class IrisAppConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
