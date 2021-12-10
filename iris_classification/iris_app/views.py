@@ -21,7 +21,7 @@ class irisAPIView(APIView):
 
             data = [request_sl, request_sw, request_pl, request_pw]
             data = np.array(data).reshape(-1, 4)
-            result = DjangoappConfig.model.predict(data)
+            result = IrisAppConfig.model.predict(data)
 
             predict_flower = ['Setosa', 'versicolor', 'virginica']
             result = predict_flower[result[0]]
