@@ -1,0 +1,4 @@
+2021-12-13 10:53:44,517:INFO:root:Created iris: sepal_length: 4.3 , sepal_width: 2.7 , petal_length: 5.1 , petal_width: 2.6
+2021-12-13 10:53:44,517:INFO:root:Predicted Flower: virginica
+2021-12-13 10:55:22,551:INFO:root:Created iris: sepal_length: 4.3 , sepal_width: 2.5 , petal_length: 5.1 , petal_width: 4.6
+2021-12-13 10:55:22,552:INFO:root:Predicted Flower: virginica

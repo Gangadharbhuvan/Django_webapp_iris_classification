@@ -1,0 +1,12 @@
+INFO:root:Created iris: 2.7 - 1.1
+2021-12-13 10:12:15,341:INFO:root:Created iris: sepal_length: 2.7 - sepal_width: 1.1
+2021-12-13 10:12:18,731:INFO:root:Created iris: sepal_length: 2.7 - sepal_width: 1.1
+2021-12-13 10:14:08,008:INFO:root:Created iris: sepal_length: 2.7 , 
+ sepal_width: 1.1 , petal_length: 3.9 , petal_width: 2.1
+2021-12-13 10:15:00,240:INFO:root:Created iris: sepal_length: 2.7 , sepal_width: 1.1 , petal_length: 3.9 , petal_width: 2.1
+2021-12-13 10:15:35,418:INFO:root:Created iris: sepal_length: 4.2 , sepal_width: 2.5 , petal_length: 4.8 , petal_width: 3.1
+2021-12-13 10:15:36,343:INFO:root:Created iris: sepal_length: 4.2 , sepal_width: 2.5 , petal_length: 4.8 , petal_width: 3.1
+2021-12-13 10:17:34,177:INFO:root:Created iris: sepal_length: 4.2 , sepal_width: 2.5 , petal_length: 4.8 , petal_width: 3.1
+2021-12-13 10:17:34,179:INFO:root:Predicted Flower: virginica
+2021-12-13 10:18:01,638:INFO:root:Created iris: sepal_length: 4.3 , sepal_width: 2.9 , petal_length: 5.1 , petal_width: 2.6
+2021-12-13 10:18:01,638:INFO:root:Predicted Flower: virginica

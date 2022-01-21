@@ -21,7 +21,5 @@ from iris_app import views
 
 
 urlpatterns = [
-    url(r'^$', views.index, name='index'),
-    url(r'^admin/', admin.site.urls),
-    url(r'^prediction/', views.form_name_view, name='prediction')
+    url(r'^prediction/', views.irisAPIView.as_view()),
 ]
