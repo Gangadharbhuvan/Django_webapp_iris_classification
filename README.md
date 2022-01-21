@@ -8,3 +8,6 @@
 
 ### Prediction page
 ![Predictionpage](https://github.com/Gangadharbhuvan/Django_webapp_iris_classification/blob/main/iris_classification/templates/iris_app/images/predictionpage.png)
+
+### Postman API results
+![Postman api](https://github.com/Gangadharbhuvan/Django_webapp_iris_classification/blob/main/iris_classification/templates/iris_app/images/iris_api.png)
